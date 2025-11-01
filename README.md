@@ -27,7 +27,6 @@ ls,cd,cat
 Medium:
 Архивы(zip/tar)
 Поиск grep
-Структура
 
 Установка 
 
