@@ -29,10 +29,10 @@ Medium:
 Поиск grep
 
 Установка 
-
-$ python -m venv venv
-$ source venv/bin/activate
-
-$ pip install requirements.txt
-$ python -m src.main
-
+ ```bash
+ $ python -m venv venv
+ $ source venv/bin/activate
+ 
+ $ pip install requirements.txt
+ $ python -m src.main
+```
