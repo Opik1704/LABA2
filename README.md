@@ -28,24 +28,12 @@ Medium:
 Архивы(zip/tar)
 Поиск grep
 Структура
-LABA2
-├── src/ # Исходный код
-│ ├── init.py # Инициализация 
-│ ├── logg.py # Логгирование
-│ ├── power.py # функции
-│ └── main.py # Основной класс 
-├── tests/ # Тесты
-│ ├── init.py # Инициализация тестов
-│ └── test.py # Тесты калькулятора
-├── requirements.txt
-├── .gitignore
-├── .pre-commit-config.yaml
-└── README.md
 
 Установка 
-git clone https://github.com/Opik1704/LABA2.git
-cd LABA2
-pip install -e .
 
-python test.py
+$ python -m venv venv
+$ source venv/bin/activate
+
+$ pip install requirements.txt
+$ python -m src.main
 
