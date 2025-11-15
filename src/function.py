@@ -4,6 +4,16 @@ import logging
 import shutil
 from pathlib import Path
 
+def parser(input_):
+    words = input_.split()
+    command = words[0] if words else ""
+    arg = words[1] if len(words) >  1 else ""
+    arg2 = words[2] if len(words) > 2 else ""
+    arg3 = words[3] if len(words) > 3 else ""
+    arg4 = words[4] if len(words) > 4 else ""
+
+    return command,arg,arg2,arg3,arg4
+    
 def ls(arg,path_):
     """
     Отображение списка файлов и директорий в текущем каталоге
