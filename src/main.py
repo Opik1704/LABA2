@@ -21,12 +21,8 @@ def main() -> None:
     print("Мини оболочка  на python. Введите break для выхода.")
     while True:
         input_ = str(input())
-        words = input_.split()
-        command = words[0] if words else ""
-        arg = words[1] if len(words) > 1 else ""
-        arg2 = words[2] if len(words) > 2 else ""
-        arg3 = words[3] if len(words) > 3 else ""
-        # print(command,"1",arg,"2",arg2,"3",arg3)
+        command,arg,arg2,arg3,arg4 = parser(input_)
+        
         file_path = os.getcwd()
         print(file_path)
         try:
