@@ -221,6 +221,18 @@ def grep(arg,pattern,path_):
                     if pattern.search(line):
                         print(f"{path_}:{line_num}: {line.rstrip()}")
             logging.info(f"grap {arg, path_, pattern}.")
-    except Exception as e:
+    except FileNotFoundError as e:
         logging.error({e})
         return False,print(f"{e}")
+    except PermissionError as e:
+        logging.error({e})
+        return False, print(f"{e}")
+    except IsADirectoryError as e:
+        logging.error({e})
+        return False, print(f"{e}")
+    except UnicodeDecodeError as e:
+        logging.error({e})
+        return False, print(f"{e}")
+    except Exception as e:
+        logging.error({e})
+        return False, print(f"{e}")
