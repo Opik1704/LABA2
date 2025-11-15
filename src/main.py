@@ -1,6 +1,7 @@
 import os
 import logging
 
+from LABA2.src.functions import parser
 from LABA2.src.power import ls
 from LABA2.src.power import cd
 from LABA2.src.power import cat
